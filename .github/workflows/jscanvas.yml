@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Build Js Canvas Page
+name: Build JsCanvas Page
 
 on:
   # Only run this workflow manually from the Actions tab
@@ -26,6 +26,7 @@ jobs:
         with:
             repository: miuix-kotlin-multiplatform/miuix
             ref: main
+            fetch-depth: 0
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
